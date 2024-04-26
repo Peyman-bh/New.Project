@@ -1,0 +1,86 @@
+@import 'mixin';
+
+.navbar {
+  @include content-row;
+  color: var(--color);
+  width: 100%;
+
+  .icon {
+    @include content-row;
+    @include margin;
+    font-family: Comfortaa;
+    font-size: 2rem;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    height: 64px;
+  }
+
+  .navbar-list {
+    @include margin;
+    @include content-row;
+    list-style: none;
+    font-family: Comfortaa;
+    height: 4rem;
+    gap: 5rem;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    right: 50px;
+
+    .hideOnMobile:hover {
+      @include hover;
+    }
+
+    svg {
+      fill: var(--menu);
+    }
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .sidebar {
+    @include margin;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    min-width: 250px;
+    background-color: rgba(238, 232, 232, 0.027);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(122, 122, 122, 0.096);
+    list-style: none;
+    display: none;
+    font-family: Comfortaa;
+
+    .list {
+      width: 100%;
+      padding-top: 30px;
+    }
+
+    .list:hover {
+      @include hover;
+    }
+
+    svg {
+      fill: var(--menu);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .navbar {
+    .menu-button {
+      display: block;
+    }
+  }
+}

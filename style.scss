@@ -1,0 +1,13 @@
+@import "mixin";
+
+:root {
+  --color: #db9e49;
+  --menu: #000000;
+}
+
+body {
+  @include margin;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
