@@ -1,0 +1,361 @@
+:root {
+  --color: #ddbc8f;
+  --menu: #ffffff;
+  --font: Montserrat;
+  --background: #a08b6d27;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+}
+.header .header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-title .title-image {
+  width: 600px;
+}
+.header .header-title .title-word {
+  margin: 0;
+  padding: 0;
+  font-size: 45px;
+  width: 600px;
+  font-weight: 400;
+  text-align: center;
+}
+.header .header-title .word-span {
+  font-size: 60px;
+  font-weight: 500;
+}
+.header .header-title .title-paragraph {
+  text-align: center;
+  width: 250px;
+  font-size: 10px;
+  font-weight: 200;
+}
+.header .header-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+  gap: 100px;
+}
+.header .header-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  gap: 20px;
+  width: auto;
+}
+.header .header-boxes .box1 {
+  width: 350px;
+  height: 200px;
+  background-color: var(--background);
+  padding: 40px 9px 50px 40px;
+  border: 1px solid var(--background);
+}
+.header .header-boxes .box1 .number {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-weight: 200;
+  font-size: 14px;
+}
+.header .header-boxes .box1 .title {
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+}
+.header .header-boxes .box1 .paragraph {
+  line-height: 30px;
+  font-weight: 100;
+  font-size: 15px;
+  width: 310px;
+}
+.header .header-boxes .box1 .image {
+  margin-top: 20px;
+}
+.header .header-boxes .box2 {
+  width: 350px;
+  height: 200px;
+  background-color: var(--background);
+  padding: 40px 9px 50px 40px;
+  border: 1px solid var(--background);
+}
+.header .header-boxes .box2 .number {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-weight: 200;
+  font-size: 14px;
+}
+.header .header-boxes .box2 .title {
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+}
+.header .header-boxes .box2 .paragraph {
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  font-weight: 100;
+  font-size: 15px;
+  width: 310px;
+  margin-top: 5px;
+}
+.header .header-boxes .box2 .image {
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+}
+.header .header-boxes .box3 {
+  width: 350px;
+  height: 200px;
+  background-color: var(--background);
+  padding: 40px 9px 50px 40px;
+  border: 1px solid var(--background);
+}
+.header .header-boxes .box3 .number {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-weight: 200;
+  font-size: 14px;
+}
+.header .header-boxes .box3 .title {
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+}
+.header .header-boxes .box3 .paragraph {
+  line-height: 30px;
+  font-weight: 100;
+  font-size: 15px;
+  width: 310px;
+}
+.header .header-boxes .box3 .image {
+  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .header .header-title .title-image {
+    width: 500px;
+  }
+  .header .header-title .title-word {
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    width: 500px;
+  }
+  .header .header-title .word-span {
+    font-size: 50px;
+  }
+  .header .header-title .title-paragraph {
+    width: 250px;
+    font-size: 15px;
+  }
+  .header .header-icons {
+    margin-top: 70px;
+    gap: 60px;
+  }
+  .header .header-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    gap: 20px;
+    width: auto;
+  }
+}
+@media (max-width: 900px) {
+  .header .header-title .title-word {
+    font-size: 35px;
+    width: 500px;
+  }
+  .header .header-title .word-span {
+    font-size: 50px;
+  }
+  .header .header-title .title-paragraph {
+    width: 330px;
+    font-size: 18px;
+  }
+  .header .header-icons {
+    display: none;
+  }
+  .header .header-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7em;
+    gap: 20px;
+    width: auto;
+  }
+}
+@media (max-width: 600px) {
+  .header .header-title .title-image {
+    width: 300px;
+  }
+  .header .header-title .title-word {
+    font-size: 25px;
+    width: 300px;
+  }
+  .header .header-title .word-span {
+    font-size: 35px;
+  }
+  .header .header-title .title-paragraph {
+    width: 330px;
+    font-size: 15px;
+  }
+  .header .header-boxes {
+    margin-top: 4em;
+  }
+  .header .header-boxes .box1 {
+    width: 300px;
+    height: 150px;
+    padding: 30px 9px 50px 40px;
+  }
+  .header .header-boxes .box1 .title {
+    font-size: 20px;
+  }
+  .header .header-boxes .box1 .paragraph {
+    width: 250px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .header .header-boxes .box1 .image {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+  }
+  .header .header-boxes .box2 {
+    width: 300px;
+    height: 150px;
+    padding: 30px 9px 50px 40px;
+  }
+  .header .header-boxes .box2 .title {
+    font-size: 20px;
+  }
+  .header .header-boxes .box2 .paragraph {
+    width: 250px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .header .header-boxes .box2 .image {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+  }
+  .header .header-boxes .box3 {
+    width: 300px;
+    height: 150px;
+    padding: 30px 9px 50px 40px;
+  }
+  .header .header-boxes .box3 .title {
+    font-size: 20px;
+  }
+  .header .header-boxes .box3 .paragraph {
+    width: 250px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .header .header-boxes .box3 .image {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+  }
+}
+@media (max-width: 350px) {
+  .header .header-title .title-image {
+    width: 250px;
+  }
+  .header .header-title .title-word {
+    font-size: 20px;
+    width: 280px;
+  }
+  .header .header-title .word-span {
+    font-size: 30px;
+  }
+  .header .header-title .title-paragraph {
+    width: 300px;
+    font-size: 10px;
+  }
+  .header .header-boxes {
+    margin-top: 4em;
+  }
+  .header .header-boxes .box1 {
+    width: 230px;
+    height: 130px;
+    padding: 25px 9px 50px 40px;
+  }
+  .header .header-boxes .box1 .title {
+    font-size: 18px;
+  }
+  .header .header-boxes .box1 .paragraph {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .header .header-boxes .box1 .image {
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    margin-top: 8px;
+  }
+  .header .header-boxes .box2 {
+    width: 230px;
+    height: 130px;
+    padding: 25px 9px 50px 40px;
+  }
+  .header .header-boxes .box2 .title {
+    font-size: 18px;
+  }
+  .header .header-boxes .box2 .paragraph {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .header .header-boxes .box2 .image {
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    margin-top: 8px;
+  }
+  .header .header-boxes .box3 {
+    width: 230px;
+    height: 130px;
+    padding: 25px 9px 50px 40px;
+  }
+  .header .header-boxes .box3 .title {
+    font-size: 18px;
+  }
+  .header .header-boxes .box3 .paragraph {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .header .header-boxes .box3 .image {
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    margin-top: 8px;
+  }
+}/*# sourceMappingURL=headr.css.map */

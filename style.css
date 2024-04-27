@@ -1,6 +1,7 @@
 :root {
-  --color: #db9e49;
-  --menu: #000000;
+  --color: #ddbc8f;
+  --menu: #ffffff;
+  --font: Montserrat;
 }
 
 body {
@@ -8,5 +9,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #000000;
+  color: var(--color);
+  font-family: var(--font);
 }/*# sourceMappingURL=style.css.map */

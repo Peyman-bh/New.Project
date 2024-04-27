@@ -17,29 +17,229 @@
     />
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/navbar cods/navbar.css" />
+    <link rel="stylesheet" href="/navbar.cods/navbar.css" />
+    <link rel="stylesheet" href="header.cods/headr.css" />
+    <link rel="stylesheet" href="section work/sectionwork.css" />
+    <link rel="stylesheet" href="column layout/columnlayout.css" />
   </head>
   <body>
+    <!-- navbar cods -->
     <div class="navbar">
-            <ul class="sidebar">
-              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-              <li class="list">BOUT</li>
-              <li class="list">WORK</li>
-              <li class="list">BLOG</li>
-              <li class="list">PAGES</li>
-            </ul>
-        <ul class="icon">
-            <li>arik.</li>
-        </ul>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="36"
+              viewBox="0 96 960 960"
+              width="36"
+            >
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              /></svg
+          ></a>
+        </li>
+        <li class="list">BOUT</li>
+        <li class="list">WORK</li>
+        <li class="list">BLOG</li>
+        <li class="list">PAGES</li>
+      </ul>
+      <ul class="icon">
+        <li>arik.</li>
+      </ul>
       <ul class="navbar-list">
         <li class="hideOnMobile">BOUT</li>
         <li class="hideOnMobile">WORK</li>
         <li class="hideOnMobile">BLOG</li>
         <li class="hideOnMobile">PAGES</li>
-        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="36"
+              viewBox="0 96 960 960"
+              width="36"
+            >
+              <path
+                d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              /></svg
+          ></a>
+        </li>
       </ul>
     </div>
 
+    <!-- header cods -->
+    <div class="header">
+      <div class="header-title">
+        <h1 class="title-word">
+          Be the best <span class="word-span">everywhere</span>
+        </h1>
+        <p class="title-paragraph">
+          Premium web design, development, and SEO services to help your
+          business stand out.
+        </p>
+        <img class="title-image" src="Images/Image.png" />
+      </div>
+      <!-- header icons -->
+      <div class="header-icons">
+        <img class="icons" src="Images/logo.svg" />
+        <img class="icons" src="Images/logo (1).svg" />
+        <img class="icons" src="Images/logo (2).svg" />
+        <img class="icons" src="Images/logo (3).svg" />
+        <img class="icons" src="Images/logo (4).svg" />
+        <img class="icons" src="Images/logo (5).svg" />
+      </div>
+      <!-- header boxes -->
+      <div class="header-boxes">
+        <div class="box1">
+          <p class="number">01</p>
+          <h2 class="title">WEB DESIGN</h2>
+          <p class="paragraph">
+            Visually stunning web designs that captivate your audience by
+            blending your brand voice and customer needs.
+          </p>
+          <img class="image" src="Images/Button Text.svg" />
+        </div>
+        <div class="box2">
+          <p class="number">02</p>
+          <h2 class="title">DEVELOPMENT</h2>
+          <p class="paragraph">
+            Get custom web development solutions that are tailored to your
+            specifications, designed to deliver a flawless user experience.
+          </p>
+          <img class="image" src="Images/Button Text.svg" />
+        </div>
+        <div class="box3">
+          <p class="number">03</p>
+          <h2 class="title">CONTENT & SEO</h2>
+          <p class="paragraph">
+            Proven SEO strategies that enhance your online performance, bringing
+            you to the forefront of organic search results.
+          </p>
+          <img class="image" src="Images/Button Text.svg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Section work -->
+    <div class="sectionwork">
+      <div class="section-title">
+        <p class="ttle">Selected work</p>
+        <img class="button" src="Images/Button Text2.svg" />
+      </div>
+      <div class="section-one">
+        <img class="image" src="Images/Image Wrapper.png" />
+        <img class="image" src="Images/Image Wrapper (1).png" />
+      </div>
+      <div class="section-two">
+        <img class="image" src="Images/Image Wrapper (3).png" />
+        <img class="image" src="Images/Image Wrapper (2).png" />
+      </div>
+    </div>
+
+    <!-- column layout -->
+
+    <div class="column-layout">
+      <div class="layout-one">
+        <p class="number">WEBDESIGN</p>
+        <p class="title">Transforming Your Ideas into Reality</p>
+        <img src="Images/Image1.png" />
+        <div class="layout-texts">
+          <div class="texts_one">
+            <p class="title">CONCEPT</p>
+            <p class="paragraph">
+              I take time to understand your business needs and audience to
+              develop a unique concept for your website. I'll create wireframes
+              that serve as the foundation for your site's design and
+              functionality.
+            </p>
+          </div>
+          <div class="texts_two">
+            <p class="title">UX / Ui DESIGN</p>
+            <p class="paragraph">
+              I'll design a user-friendly interface that is visually appealing
+              and engages your target audience. Your website will be created to
+              meet your brand's needs and goals while ensuring a seamless user
+              experience.
+            </p>
+          </div>
+          <div class="texts_three">
+            <p class="title">PROTOTYPE</p>
+            <p class="paragraph">
+              With an interactive prototype, you'll have the ability to test
+              your website's functionality before it goes live. This will ensure
+              that your website's design and user experience are optimized for
+              your audience's needs and preferences.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="layout-one">
+        <p class="number">DEVELOPMENT</p>
+        <p class="title">
+          Developing High-Performance Websites and Web Applications
+        </p>
+        <img src="Images/Image 2(1).png" />
+        <div class="layout-texts">
+          <div class="texts_one">
+            <p class="title">FRAMER</p>
+            <p class="paragraph">
+              I specialize in developing web applications using Framer. From
+              custom animations to complex interactions, I bring your web app to
+              life.
+            </p>
+          </div>
+          <div class="texts_two">
+            <p class="title">CMS INTEGRATION</p>
+            <p class="paragraph">
+              I can help you streamline your content management process by
+              integrating a CMS into your website. Say goodbye to manual updates
+              and hello to efficiency.
+            </p>
+          </div>
+          <div class="texts_three">
+            <p class="title">WEB DESIGN SYSTEM</p>
+            <p class="paragraph">
+              I use a modular design approach to create a web design system that
+              ensures consistency throughout your website. This results in a
+              professional and cohesive online presence.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="layout-one">
+        <p class="number">SEO & CONTENT</p>
+        <p class="title">Boosting Your Website's Organic Search Traffic</p>
+        <img src="Images/Image3 (2).png" />
+        <div class="layout-texts">
+          <div class="texts_one">
+            <p class="title">RESEARCH</p>
+            <p class="paragraph">
+              I conduct thorough research to identify the best keywords and
+              strategies to improve your website's search engine ranking.
+            </p>
+          </div>
+          <div class="texts_two">
+            <p class="title">SEO RANKING</p>
+            <p class="paragraph">
+              My SEO services are designed to improve your website's visibility
+              on search engines, increasing your organic traffic and driving
+              more leads and sales.
+            </p>
+          </div>
+          <div class="texts_three">
+            <p class="title">SEO SUPPORRT</p>
+            <p class="paragraph">
+              With ongoing SEO support, I ensure that your website stays
+              up-to-date with the latest SEO best practices, keeping you ahead
+              of the competition.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script file -->
     <script src="index.js"></script>
   </body>
 </html>

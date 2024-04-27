@@ -1,0 +1,7 @@
+@import 'mixin-columnlayout';
+
+.column-layout {
+    @include content-column;
+    position: absolute;
+    top: 160em;
+}

@@ -1,0 +1,8 @@
+.column-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 160em;
+}/*# sourceMappingURL=columnlayout.css.map */

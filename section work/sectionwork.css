@@ -1,0 +1,115 @@
+.sectionwork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 85rem;
+  gap: 15px;
+}
+.sectionwork .section-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  gap: 30em;
+}
+.sectionwork .section-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.sectionwork .section-one .image {
+  width: 600px;
+}
+.sectionwork .section-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.sectionwork .section-two .image {
+  width: 600px;
+}
+
+@media (max-width: 1350px) {
+  .sectionwork .section-title {
+    gap: 24em;
+  }
+  .sectionwork .section-one .image {
+    width: 498px;
+  }
+  .sectionwork .section-two .image {
+    width: 498px;
+  }
+}
+@media (max-width: 1033px) {
+  .sectionwork {
+    position: absolute;
+    top: 90rem;
+  }
+  .sectionwork .section-title {
+    gap: 28em;
+    font-size: 25px;
+  }
+}
+@media (max-width: 1010px) {
+  .sectionwork {
+    position: absolute;
+    top: 700rem;
+  }
+  .sectionwork .section-title {
+    gap: 9em;
+    font-size: 25px;
+  }
+}
+@media (max-width: 1010px) {
+  .sectionwork {
+    position: absolute;
+    top: 105rem;
+  }
+}
+@media (max-width: 600px) {
+  .sectionwork {
+    top: 80rem;
+  }
+  .sectionwork .section-title {
+    gap: 5em;
+    font-size: 19px;
+  }
+  .sectionwork .section-title .button {
+    width: 75px;
+  }
+  .sectionwork .section-one .image {
+    width: 350px;
+  }
+  .sectionwork .section-two .image {
+    width: 350px;
+  }
+}
+@media (max-width: 350px) {
+  .sectionwork {
+    top: 73rem;
+  }
+  .sectionwork .section-title {
+    gap: 6em;
+    font-size: 15px;
+  }
+  .sectionwork .section-title .button {
+    width: 65px;
+  }
+  .sectionwork .section-one .image {
+    width: 280px;
+  }
+  .sectionwork .section-two .image {
+    width: 280px;
+  }
+}/*# sourceMappingURL=sectionwork.css.map */

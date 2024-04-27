@@ -1,5 +1,10 @@
-@import 'mixin';
+@import "mixin";
 
+:root {
+  --color: #ddbc8f;
+  --menu: #ffffff;
+  --font: Montserrat;
+}
 .navbar {
   @include content-row;
   color: var(--color);
@@ -21,10 +26,9 @@
     @include margin;
     @include content-row;
     list-style: none;
-    font-family: Comfortaa;
+    font-family: var(--font);
     height: 4rem;
     gap: 5rem;
-    font-weight: 700;
     position: absolute;
     top: 0;
     right: 50px;
@@ -52,8 +56,7 @@
     right: 0;
     height: 100vh;
     min-width: 250px;
-    background-color: rgba(238, 232, 232, 0.027);
-    backdrop-filter: blur(12px);
+    background: black;
     box-shadow: -10px 0 10px rgba(122, 122, 122, 0.096);
     list-style: none;
     display: none;

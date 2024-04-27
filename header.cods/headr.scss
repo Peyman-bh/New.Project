@@ -1,0 +1,351 @@
+@import "mixin.header";
+
+:root {
+  --color: #ddbc8f;
+  --menu: #ffffff;
+  --font: Montserrat;
+  --background: #a08b6d27;
+}
+
+.header {
+  @include content-column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+
+  .header-title {
+    @include content-column;
+
+    .title-image {
+      width: 600px;
+    }
+
+    .title-word {
+      @include margin;
+      font-size: 45px;
+      width: 600px;
+      font-weight: 400;
+      text-align: center;
+    }
+    .word-span {
+      font-size: 60px;
+      font-weight: 500;
+    }
+
+    .title-paragraph {
+      text-align: center;
+      width: 250px;
+      font-size: 10px;
+      font-weight: 200;
+    }
+  }
+
+  .header-icons {
+    @include content-row;
+    margin-top: 130px;
+    gap: 100px;
+  }
+
+  .header-boxes {
+    @include content-row;
+    margin-top: 80px;
+    gap: 20px;
+    width: auto;
+
+    .box1 {
+      @include style-boxes;
+
+      .number {
+        @include margin;
+        @include box-number;
+      }
+
+      .title {
+        @include margin;
+        font-weight: 200;
+      }
+
+      .paragraph {
+        @include box-paragraph;
+      }
+
+      .image {
+        margin-top: 20px;
+      }
+    }
+
+    .box2 {
+      @include style-boxes;
+
+      .number {
+        @include margin;
+        margin-bottom: 10px;
+        font-weight: 200;
+        font-size: 14px;
+      }
+
+      .title {
+        @include margin;
+        font-weight: 200;
+      }
+
+      .paragraph {
+        @include margin;
+        @include box-paragraph;
+        margin-top: 5px;
+      }
+
+      .image {
+        @include margin;
+        margin-top: 15px;
+      }
+    }
+
+    .box3 {
+      @include style-boxes;
+
+      .number {
+        @include margin;
+        @include box-number;
+      }
+
+      .title {
+        @include margin;
+        font-weight: 200;
+      }
+
+      .paragraph {
+        @include box-paragraph;
+      }
+
+      .image {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    .header-title {
+      .title-image {
+        width: 500px;
+      }
+
+      .title-word {
+        @include margin;
+        font-size: 35px;
+        width: 500px;
+      }
+      .word-span {
+        font-size: 50px;
+      }
+
+      .title-paragraph {
+        width: 250px;
+        font-size: 15px;
+      }
+    }
+
+    .header-icons {
+      margin-top: 70px;
+      gap: 60px;
+    }
+
+    .header-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 60px;
+      gap: 20px;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    .header-title {
+      .title-word {
+        font-size: 35px;
+        width: 500px;
+      }
+      .word-span {
+        font-size: 50px;
+      }
+
+      .title-paragraph {
+        width: 330px;
+        font-size: 18px;
+      }
+    }
+
+    .header-icons {
+      display: none;
+    }
+
+    .header-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 7em;
+      gap: 20px;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    .header-title {
+      .title-image {
+        width: 300px;
+      }
+      .title-word {
+        font-size: 25px;
+        width: 300px;
+      }
+      .word-span {
+        font-size: 35px;
+      }
+
+      .title-paragraph {
+        width: 330px;
+        font-size: 15px;
+      }
+    }
+
+    .header-boxes {
+      margin-top: 4em;
+
+      .box1 {
+        @include respensive-boxes;
+
+        .title {
+          font-size: 20px;
+        }
+
+        .paragraph {
+          @include respensive-paragraph;
+        }
+
+        .image {
+          @include margin;
+          width: 150px;
+        }
+      }
+      .box2 {
+        @include respensive-boxes;
+
+        .title {
+          font-size: 20px;
+        }
+
+        .paragraph {
+          @include respensive-paragraph;
+        }
+
+        .image {
+          @include margin;
+          width: 150px;
+        }
+      }
+      .box3 {
+        @include respensive-boxes;
+
+        .title {
+          font-size: 20px;
+        }
+
+        .paragraph {
+          @include respensive-paragraph;
+        }
+
+        .image {
+          @include margin;
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .header {
+    .header-title {
+      .title-image {
+        width: 250px;
+      }
+      .title-word {
+        font-size: 20px;
+        width: 280px;
+      }
+      .word-span {
+        font-size: 30px;
+      }
+
+      .title-paragraph {
+        width: 300px;
+        font-size: 10px;
+      }
+    }
+
+    .header-boxes {
+      margin-top: 4em;
+
+      .box1 {
+        @include respensive-boxes-300;
+
+        .title {
+          font-size: 18px;
+        }
+
+        .paragraph {
+          @include margin;
+          @include respensive-paragraph-300;
+        }
+
+        .image {
+          @include margin;
+          width: 130px;
+          margin-top: 8px;
+        }
+      }
+      .box2 {
+        @include respensive-boxes-300;
+
+        .title {
+          font-size: 18px;
+        }
+
+        .paragraph {
+          @include margin;
+          @include respensive-paragraph-300;
+        }
+
+        .image {
+          @include margin;
+          width: 130px;
+          margin-top: 8px;
+        }
+      }
+      .box3 {
+        @include respensive-boxes-300;
+
+        .title {
+          font-size: 18px;
+        }
+
+        .paragraph {
+          @include margin;
+          @include respensive-paragraph-300;
+        }
+
+        .image {
+          @include margin;
+          width: 130px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
