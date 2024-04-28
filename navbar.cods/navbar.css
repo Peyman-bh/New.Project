@@ -56,7 +56,6 @@
 .navbar .sidebar {
   margin: 0;
   padding: 0;
-  display: flex;
   flex-direction: column;
   padding: 30px;
   position: absolute;
@@ -64,11 +63,12 @@
   right: 0;
   height: 100vh;
   min-width: 250px;
-  background: black;
   box-shadow: -10px 0 10px rgba(122, 122, 122, 0.096);
+  background: black;
   list-style: none;
   display: none;
   font-family: Comfortaa;
+  z-index: 1;
 }
 .navbar .sidebar .list {
   width: 100%;

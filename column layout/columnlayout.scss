@@ -1,7 +1,789 @@
-@import 'mixin-columnlayout';
+@import "mixin-columnlayout";
 
 .column-layout {
+  @include content-column;
+  position: absolute;
+  top: 160em;
+  left: 0;
+  right: 0;
+  gap: 20px;
+
+  .layout-one {
+    @include content-column;
+    @include layout;
+
+    .text-title {
+      margin-right: 77px;
+      .number {
+        @include margin;
+        font-size: 12px;
+      }
+
+      .title {
+        @include layout-title;
+      }
+    }
+
+    .layout-texts {
+      margin-top: 30px;
+      margin-right: 50px;
+
+      .texts-one {
+        @include texts;
+        gap: 9.5rem;
+
+        .paragraph {
+          @include layout-paragraph;
+        }
+
+        .title {
+          font-size: 12px;
+        }
+      }
+
+      .texts-two {
+        @include texts;
+        gap: 5rem;
+
+        .paragraph {
+          @include layout-paragraph;
+          width: 890px;
+        }
+
+        .title {
+          width: 200px;
+          font-size: 12px;
+        }
+      }
+
+      .texts-three {
+        @include texts-three;
+        gap: 8.5rem;
+
+        .paragraph {
+          @include layout-paragraph;
+        }
+
+        .title {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .image {
+      width: 800px;
+    }
+  }
+
+  .layout-two {
+    @include content-column;
+    @include layout;
+
+    .text-title {
+      width: 800px;
+      .number {
+        @include margin;
+        font-size: 12px;
+      }
+
+      .title {
+        @include layout-title;
+      }
+    }
+
+    .layout-texts {
+      margin-top: 30px;
+      margin-right: 50px;
+
+      .texts-one {
+        @include texts;
+        gap: 9.5rem;
+
+        .paragraph {
+          @include layout-paragraph;
+        }
+
+        .title {
+          font-size: 12px;
+        }
+      }
+
+      .texts-two {
+        @include texts;
+        gap: 4.5rem;
+
+        .paragraph {
+          @include layout-paragraph;
+          width: 890px;
+        }
+
+        .title {
+          width: 200px;
+          font-size: 12px;
+        }
+      }
+
+      .texts-three {
+        @include texts-three;
+        gap: 3.5rem;
+
+        .paragraph {
+          @include layout-paragraph;
+        }
+
+        .title {
+          width: 150px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .image {
+      width: 800px;
+    }
+  }
+
+  .layout-three {
+    @include content-column;
+    @include layout;
+
+    .text-title {
+      width: 800px;
+      .number {
+        @include margin;
+        font-size: 12px;
+      }
+
+      .title {
+        @include layout-title;
+      }
+    }
+
+    .layout-texts {
+      margin-top: 30px;
+      margin-right: 50px;
+
+      .texts-one {
+        @include texts;
+        gap: 9rem;
+
+        .paragraph {
+          @include layout-paragraph;
+        }
+
+        .title {
+          font-size: 12px;
+        }
+      }
+
+      .texts-two {
+        @include texts;
+        gap: 5rem;
+
+        .paragraph {
+          @include layout-paragraph;
+          width: 890px;
+        }
+
+        .title {
+          width: 200px;
+          font-size: 12px;
+        }
+      }
+
+      .texts-three {
+        @include texts-three;
+        gap: 6.5rem;
+
+        .paragraph {
+          @include layout-paragraph;
+        }
+
+        .title {
+          width: 110px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .image {
+      width: 800px;
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .column-layout {
+    top: 200em;
+  }
+}
+
+@media (max-width: 1010px) {
+  .column-layout {
+    top: 215em;
+  }
+}
+
+@media (max-width: 900px) {
+  .column-layout {
     @include content-column;
     position: absolute;
+    left: 0;
+    right: 0;
+    top: 215em;
+
+    .layout-one {
+      @include respensive-layout;
+
+      .image {
+        width: 600px;
+      }
+
+      .text-title {
+        @include margin;
+        width: 600px;
+
+        .title {
+          @include respensive-layout-title;
+        }
+      }
+
+      .layout-texts {
+        margin-top: 30px;
+        width: 650px;
+        .texts-one {
+          @include respensive-texts;
+          gap: 10rem;
+
+          .paragraph {
+            @include respensive-layout-paragraph;
+          }
+
+          .title {
+            font-size: 10px;
+          }
+        }
+
+        .texts-two {
+          @include respensive-texts;
+          gap: 2.5rem;
+
+          .paragraph {
+            @include respensive-layout-paragraph;
+            width: 460px;
+          }
+
+          .title {
+            font-size: 10px;
+          }
+        }
+
+        .texts-three {
+          @include respensive-texts-three;
+          gap: 8.3rem;
+          width: 600px;
+
+          .paragraph {
+            @include respensive-layout-paragraph;
+          }
+
+          .title {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .layout-two {
+      @include respensive-layout;
+
+      .image {
+        width: 600px;
+      }
+
+      .text-title {
+        @include margin;
+        width: 600px;
+
+        .title {
+          @include respensive-layout-title;
+        }
+      }
+
+      .layout-texts {
+        margin-top: 30px;
+        width: 650px;
+        .texts-one {
+          @include respensive-texts;
+          gap: 9.9rem;
+
+          .paragraph {
+            @include respensive-layout-paragraph;
+          }
+
+          .title {
+            font-size: 10px;
+          }
+        }
+
+        .texts-two {
+          @include respensive-texts;
+          gap: 1.8rem;
+
+          .paragraph {
+            @include respensive-layout-paragraph;
+            width: 460px;
+          }
+
+          .title {
+            font-size: 10px;
+          }
+        }
+
+        .texts-three {
+          @include respensive-texts-three;
+          gap: 5.4rem;
+
+          .paragraph {
+            @include respensive-layout-paragraph;
+            width: 635px;
+          }
+
+          .title {
+            font-size: 10px;
+            width: 200px;
+          }
+        }
+      }
+    }
+
+    .layout-three {
+      @include respensive-layout;
+
+      .image {
+        width: 600px;
+      }
+
+      .text-title {
+        @include margin;
+        width: 600px;
+
+        .title {
+          @include respensive-layout-title;
+        }
+      }
+
+      .layout-texts {
+        margin-top: 30px;
+        width: 650px;
+        .texts-one {
+          @include respensive-texts;
+          gap: 10rem;
+
+          .paragraph {
+            @include respensive-layout-paragraph;
+          }
+
+          .title {
+            font-size: 10px;
+          }
+        }
+
+        .texts-two {
+          @include respensive-texts;
+          gap: 3rem;
+
+          .paragraph {
+            @include respensive-layout-paragraph;
+            width: 460px;
+          }
+
+          .title {
+            font-size: 10px;
+          }
+        }
+
+        .texts-three {
+          @include respensive-texts-three;
+          gap: 8rem;
+          width: 600px;
+
+          .paragraph {
+            @include respensive-layout-paragraph;
+          }
+
+          .title {
+            font-size: 10px;
+            width: 130px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .column-layout {
+    .layout-one {
+      @include respensive700-layout;
+
+      .image {
+        width: 400px;
+      }
+
+      .text-title {
+        @include margin;
+        width: 400px;
+
+        .number {
+          font-size: 10px;
+        }
+
+        .title {
+          @include respensive700-layout-title;
+        }
+      }
+
+      .layout-texts {
+        margin-top: 20px;
+        width: 450px;
+        .texts-one {
+          @include respensive700-texts;
+          gap: 5rem;
+
+          .paragraph {
+            @include respensive700-layout-paragraph;
+            width: 283px;
+          }
+
+          .title {
+            font-size: 10px;
+          }
+        }
+
+        .texts-two {
+          @include respensive700-texts;
+          gap: 3rem;
+
+          .paragraph {
+            @include respensive700-layout-paragraph;
+            width: 325px;
+          }
+
+          .title {
+            width: 100px;
+            font-size: 8px;
+          }
+        }
+
+        .texts-three {
+          @include respensive700-texts-three;
+          gap: 4.4rem;
+          width: 400px;
+
+          .paragraph {
+            @include respensive700-layout-paragraph;
+          }
+
+          .title {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .layout-two {
+      @include respensive700-layout;
+
+      .image {
+        width: 400px;
+      }
+
+      .text-title {
+        @include margin;
+        width: 400px;
+
+        .number {
+          font-size: 10px;
+        }
+
+        .title {
+          @include respensive700-layout-title;
+        }
+      }
+
+      .layout-texts {
+        margin-top: 20px;
+        width: 450px;
+        .texts-one {
+          @include respensive700-texts;
+          gap: 5rem;
+
+          .paragraph {
+            @include respensive700-layout-paragraph;
+          }
+
+          .title {
+            font-size: 10px;
+          }
+        }
+
+        .texts-two {
+          @include respensive700-texts;
+          gap: 0.9rem;
+
+          .paragraph {
+            @include respensive700-layout-paragraph;
+            width: 290px;
+          }
+
+          .title {
+            width: 112px;
+            font-size: 10px;
+          }
+        }
+
+        .texts-three {
+          @include respensive700-texts-three;
+          gap: 0.4rem;
+          width: 410px;
+
+          .paragraph {
+            @include respensive700-layout-paragraph;
+          }
+
+          .title {
+            width: 118px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .layout-three {
+      @include respensive700-layout;
+
+      .image {
+        width: 400px;
+      }
+
+      .text-title {
+        @include margin;
+        width: 400px;
+
+        .number {
+          font-size: 10px;
+        }
+
+        .title {
+          @include respensive700-layout-title;
+        }
+      }
+
+      .layout-texts {
+        margin-top: 20px;
+        width: 450px;
+        .texts-one {
+          @include respensive700-texts;
+          gap: 5rem;
+
+          .paragraph {
+            @include respensive700-layout-paragraph;
+          }
+
+          .title {
+            font-size: 10px;
+          }
+        }
+
+        .texts-two {
+          @include respensive700-texts;
+          gap: 2.5rem;
+
+          .paragraph {
+            @include respensive700-layout-paragraph;
+            width: 275px;
+          }
+
+          .title {
+            width: 100px;
+            font-size: 10px;
+          }
+        }
+
+        .texts-three {
+          @include respensive700-texts-three;
+          gap: 3.5rem;
+          width: 418px;
+
+          .paragraph {
+            @include respensive700-layout-paragraph;
+          }
+
+          .title {
+            width: 85px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .column-layout {
     top: 160em;
+  }
+}
+
+@media (max-width: 500px) {
+  .column-layout {
+    .layout-one {
+      @include respensive500-layout;
+
+      .image {
+        width: 300px;
+      }
+
+      .text-title {
+        @include margin;
+        width: 300px;
+
+        .number {
+          font-size: 10px;
+        }
+
+        .title {
+          @include respensive500-layout-title;
+        }
+      }
+
+      .layout-texts {
+        margin-top: 20px;
+        width: 350px;
+        .texts-one {
+          border: none;
+          flex-direction: column;
+          gap: 0;
+          width: 300px;
+
+          .paragraph {
+            @include respensive500-layout-paragraph;
+            width: 302px;
+          }
+
+          .title {
+            font-size: 12px;
+          }
+        }
+
+        .texts-two {
+          display: none;
+        }
+
+        .texts-three {
+          display: none;
+        }
+      }
+    }
+
+    .layout-two {
+      @include respensive500-layout;
+
+      .image {
+        width: 300px;
+      }
+
+      .text-title {
+        @include margin;
+        width: 300px;
+
+        .number {
+          font-size: 10px;
+        }
+
+        .title {
+          @include respensive500-layout-title;
+        }
+      }
+
+      .layout-texts {
+        margin-top: 20px;
+        width: 350px;
+        .texts-one {
+          border: none;
+          flex-direction: column;
+          gap: 0;
+          width: 300px;
+
+          .paragraph {
+            @include respensive500-layout-paragraph;
+            width: 302px;
+          }
+
+          .title {
+            font-size: 12px;
+          }
+        }
+
+        .texts-two {
+          display: none;
+        }
+
+        .texts-three {
+          display: none;
+        }
+      }
+    }
+
+    .layout-three {
+      @include respensive500-layout;
+
+      .image {
+        width: 300px;
+      }
+
+      .text-title {
+        @include margin;
+        width: 300px;
+
+        .number {
+          font-size: 10px;
+        }
+
+        .title {
+          @include respensive500-layout-title;
+        }
+      }
+
+      .layout-texts {
+        margin-top: 20px;
+        width: 300px;
+        .texts-one {
+          border: none;
+          flex-direction: column;
+          gap: 0;
+          width: 300px;
+          margin-left: 25px;
+
+          .paragraph {
+            @include respensive500-layout-paragraph;
+            width: 302px;
+          }
+
+          .title {
+            font-size: 12px;
+          }
+        }
+
+        .texts-two {
+          display: none;
+        }
+
+        .texts-three {
+          display: none;
+        }
+      }
+    }
+  }
 }

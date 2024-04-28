@@ -1,3 +1,8 @@
+@mixin margin {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin content-row {
   display: flex;
   flex-direction: row;
@@ -10,4 +15,131 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@mixin layout {
+  width: 900px;
+  background-color: var(--background);
+  border: 1px solid var(--background);
+  padding: 60px 30px 40px 30px;
+}
+
+@mixin layout-title {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+@mixin texts {
+  width: 805px;
+  margin-left: 50px;
+  display: flex;
+  border-bottom: 1px solid #ddbc8f;
+  padding-bottom: 20px;
+}
+
+@mixin texts-three {
+  width: 805px;
+  margin-left: 50px;
+  padding-top: 10px;
+  display: flex;
+}
+
+@mixin layout-paragraph {
+  font-size: 11px;
+  width: 600px;
+  line-height: 2em;
+}
+
+//  respensive mixin
+
+@mixin respensive-layout {
+  width: 650px;
+  background-color: var(--background);
+  border: 1px solid var(--background);
+  padding: 60px 30px 40px 30px;
+}
+
+@mixin respensive-layout-title {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+@mixin respensive-texts {
+  width: 600px;
+  margin-left: 50px;
+  display: flex;
+  border-bottom: 1px solid #ddbc8f;
+  padding-bottom: 20px;
+}
+
+@mixin respensive-texts-three {
+  width: 560px;
+  margin-left: 50px;
+  padding-top: 10px;
+  display: flex;
+}
+
+@mixin respensive-layout-paragraph {
+  font-size: 8px;
+  width: 602px;
+  line-height: 2em;
+}
+
+//  respensive 700 mixin
+
+@mixin respensive700-layout {
+  width: 450px;
+  background-color: var(--background);
+  border: 1px solid var(--background);
+  padding: 40px 30px 30px 30px;
+}
+
+@mixin respensive700-layout-title {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+@mixin respensive700-texts {
+  width: 400px;
+  margin-left: 50px;
+  display: flex;
+  border-bottom: 1px solid #ddbc8f;
+  padding-bottom: 10px;
+}
+
+@mixin respensive700-texts-three {
+  width: 560px;
+  margin-left: 50px;
+  padding-top: 10px;
+  display: flex;
+}
+
+@mixin respensive700-layout-paragraph {
+  font-size: 8px;
+  width: 290px;
+  line-height: 2em;
+}
+
+//  respensive 500 mixin
+
+@mixin respensive500-layout {
+  width: 350px;
+  background-color: var(--background);
+  border: 1px solid var(--background);
+  padding: 40px 30px 30px 30px;
+}
+
+@mixin respensive500-layout-title {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+@mixin respensive500-layout-paragraph {
+  font-size: 10px;
+  width: 290px;
+  line-height: 2em;
 }
