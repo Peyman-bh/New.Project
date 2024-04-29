@@ -1,0 +1,462 @@
+@import "mixinchat.scss";
+
+.chat-boxes {
+  @include content-column;
+  margin-top: 50px;
+  width: auto;
+  position: absolute;
+  top: 375em;
+  left: 0;
+  right: 0;
+  gap: 20px;
+
+  .title-top {
+    @include margin;
+    font-size: 58px;
+    width: 400px;
+    text-align: center;
+  }
+
+  .paragraph {
+    @include margin;
+    text-align: center;
+    width: 500px;
+  }
+
+  .boxes1 {
+    @include content-row;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    gap: 20px;
+
+    .box1 {
+      @include boxes;
+
+      .title {
+        font-size: 16px;
+      }
+
+      .paragraph {
+        @include paragraph;
+      }
+
+      .person {
+        @include content-row;
+        width: 240px;
+        gap: 20px;
+
+        .image {
+          width: 50px;
+        }
+
+        .text {
+          font-size: 13px;
+          .one {
+            @include margin;
+            margin-bottom: 10px;
+          }
+          .two {
+            @include margin;
+            width: 177px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .box2 {
+      @include boxes;
+
+      .title {
+        font-size: 16px;
+      }
+
+      .paragraph {
+        @include paragraph;
+        padding-bottom: 15px;
+      }
+
+      .person {
+        @include content-row;
+        width: 240px;
+        gap: 20px;
+
+        .image {
+          width: 45px;
+        }
+
+        .text {
+          font-size: 13px;
+          .one {
+            @include margin;
+            margin-bottom: 10px;
+          }
+          .two {
+            @include margin;
+            width: 177px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .boxes2 {
+    @include content-row;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .box1 {
+      @include boxes;
+      height: 265px;
+
+      .title {
+        font-size: 16px;
+      }
+
+      .paragraph {
+        @include paragraph;
+        padding-bottom: 10px;
+      }
+
+      .person {
+        @include content-row;
+        width: 240px;
+        gap: 20px;
+
+        .image {
+          width: 50px;
+        }
+
+        .text {
+          font-size: 13px;
+          .one {
+            @include margin;
+            margin-bottom: 10px;
+          }
+          .two {
+            @include margin;
+            width: 177px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .box2 {
+      @include boxes;
+      height: 265px;
+
+      .title {
+        font-size: 16px;
+      }
+
+      .paragraph {
+        @include paragraph;
+        padding-bottom: 45px;
+      }
+
+      .person {
+        @include content-row;
+        width: 240px;
+        gap: 20px;
+
+        .image {
+          width: 45px;
+        }
+
+        .text {
+          font-size: 13px;
+          .one {
+            @include margin;
+            margin-bottom: 10px;
+          }
+          .two {
+            @include margin;
+            width: 177px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .chat-boxes {
+    top: 420em;
+  }
+}
+
+@media (max-width: 1010px) {
+  .chat-boxes {
+    top: 430em;
+  }
+}
+
+@media (max-width: 900px) {
+  .chat-boxes {
+    top: 395em;
+  }
+}
+
+@media (max-width: 700px) {
+  .chat-boxes {
+    top: 345em;
+    .box2 {
+      .paragraph {
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .title-top {
+    @include margin;
+    font-size: 38px;
+    width: 400px;
+    text-align: center;
+  }
+
+  .paragraph {
+    @include margin;
+    text-align: center;
+    width: 500px;
+    font-size: 15px;
+  }
+
+  .boxes2 {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .chat-boxes {
+    top: 290em;
+    .boxes1 {
+      margin-top: 15px;
+    }
+    .title-top {
+      font-size: 45px;
+      width: 300px;
+      margin-top: 1em;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .chat-boxes {
+    top: 263em;
+    .boxes1 {
+      margin-top: 15px;
+    }
+    .title-top {
+      @include margin;
+      font-size: 35px;
+      width: 280px;
+      text-align: center;
+      margin-top: 1em;
+    }
+
+    .paragraph {
+      @include margin;
+      text-align: center;
+      width: 300px;
+      font-size: 10px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .chat-boxes {
+    top: 258em;
+
+    .title-top {
+      @include margin;
+      font-size: 28px;
+      width: 200px;
+      text-align: center;
+    }
+
+    .paragraph {
+      @include margin;
+      text-align: center;
+      width: 300px;
+      font-size: 10px;
+    }
+
+    .boxes1 {
+      margin-top: 20px;
+      .box1 {
+        @include respensise-boxes;
+
+        .logo {
+          width: 28px;
+        }
+
+        .title {
+          font-size: 14px;
+        }
+
+        .paragraph {
+          @include respensise-paragraph;
+        }
+
+        .person {
+          @include content-row;
+          width: 240px;
+          gap: 20px;
+
+          .image {
+            width: 40px;
+          }
+
+          .text {
+            font-size: 10px;
+            .one {
+              @include margin;
+              margin-bottom: 8px;
+            }
+            .two {
+              @include margin;
+              width: 177px;
+              font-size: 8px;
+            }
+          }
+        }
+      }
+
+      .box2 {
+        @include respensise-boxes;
+
+        .logo {
+          width: 25px;
+        }
+
+        .title {
+          font-size: 14px;
+        }
+
+        .paragraph {
+          @include respensise-paragraph;
+          padding-bottom: 25px;
+        }
+
+        .person {
+          @include content-row;
+          width: 240px;
+          gap: 20px;
+
+          .image {
+            width: 40px;
+          }
+
+          .text {
+            font-size: 10px;
+            .one {
+              @include margin;
+              margin-bottom: 8px;
+            }
+            .two {
+              @include margin;
+              width: 177px;
+              font-size: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .boxes2 {
+      margin-top: 5px;
+      .box1 {
+        @include respensise-boxes;
+
+        .logo {
+          width: 90px;
+        }
+
+        .title {
+          font-size: 14px;
+        }
+
+        .paragraph {
+          @include respensise-paragraph;
+        }
+
+        .person {
+          @include content-row;
+          width: 240px;
+          gap: 20px;
+
+          .image {
+            width: 40px;
+          }
+
+          .text {
+            font-size: 10px;
+            .one {
+              @include margin;
+              margin-bottom: 8px;
+            }
+            .two {
+              @include margin;
+              width: 177px;
+              font-size: 8px;
+            }
+          }
+        }
+      }
+
+      .box2 {
+        @include respensise-boxes;
+        .logo {
+          width: 90px;
+        }
+
+        .title {
+          font-size: 14px;
+        }
+
+        .paragraph {
+          @include respensise-paragraph;
+          padding-bottom: 50px;
+        }
+
+        .person {
+          @include content-row;
+          width: 240px;
+          gap: 20px;
+
+          .image {
+            width: 40px;
+          }
+
+          .text {
+            font-size: 10px;
+            .one {
+              @include margin;
+              margin-bottom: 8px;
+            }
+            .two {
+              @include margin;
+              width: 177px;
+              font-size: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .chat-boxes {
+    top: 228em;
+  }
+}
+
+@media (max-width: 330px) {
+  .chat-boxes {
+    top: 228em;
+  }
+}

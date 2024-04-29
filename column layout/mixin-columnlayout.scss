@@ -143,3 +143,31 @@
   width: 290px;
   line-height: 2em;
 }
+
+//  respensive 400 mixin
+
+@mixin respensive400-layout {
+  width: 250px;
+  background-color: var(--background);
+  border: 1px solid var(--background);
+  padding: 40px 30px 30px 30px;
+}
+
+@mixin respensive400-layout-title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+@mixin respensive400-layout-paragraph {
+  font-size: 10px;
+  width: 290px;
+  line-height: 2em;
+}
+
+@mixin respensive300-layout {
+  width: 250px;
+  background-color: var(--background);
+  border: 1px solid var(--background);
+  padding: 30px 20px 20px 20px;
+}

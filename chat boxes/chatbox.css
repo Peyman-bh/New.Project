@@ -1,0 +1,518 @@
+.chat-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: auto;
+  position: absolute;
+  top: 375em;
+  left: 0;
+  right: 0;
+  gap: 20px;
+}
+.chat-boxes .title-top {
+  margin: 0;
+  padding: 0;
+  font-size: 58px;
+  width: 400px;
+  text-align: center;
+}
+.chat-boxes .paragraph {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 500px;
+}
+.chat-boxes .boxes1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  gap: 20px;
+}
+.chat-boxes .boxes1 .box1 {
+  width: 370px;
+  height: 245px;
+  background-color: var(--background);
+  padding: 30px 10px 40px 30px;
+  border: 1px solid var(--background);
+}
+.chat-boxes .boxes1 .box1 .title {
+  font-size: 16px;
+}
+.chat-boxes .boxes1 .box1 .paragraph {
+  font-size: 12px;
+  text-align: start;
+  width: 350px;
+  padding-bottom: 35px;
+  line-height: 1.8em;
+  font-weight: 300;
+}
+.chat-boxes .boxes1 .box1 .person {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  gap: 20px;
+}
+.chat-boxes .boxes1 .box1 .person .image {
+  width: 50px;
+}
+.chat-boxes .boxes1 .box1 .person .text {
+  font-size: 13px;
+}
+.chat-boxes .boxes1 .box1 .person .text .one {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.chat-boxes .boxes1 .box1 .person .text .two {
+  margin: 0;
+  padding: 0;
+  width: 177px;
+  font-size: 10px;
+}
+.chat-boxes .boxes1 .box2 {
+  width: 370px;
+  height: 245px;
+  background-color: var(--background);
+  padding: 30px 10px 40px 30px;
+  border: 1px solid var(--background);
+}
+.chat-boxes .boxes1 .box2 .title {
+  font-size: 16px;
+}
+.chat-boxes .boxes1 .box2 .paragraph {
+  font-size: 12px;
+  text-align: start;
+  width: 350px;
+  padding-bottom: 35px;
+  line-height: 1.8em;
+  font-weight: 300;
+  padding-bottom: 15px;
+}
+.chat-boxes .boxes1 .box2 .person {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  gap: 20px;
+}
+.chat-boxes .boxes1 .box2 .person .image {
+  width: 45px;
+}
+.chat-boxes .boxes1 .box2 .person .text {
+  font-size: 13px;
+}
+.chat-boxes .boxes1 .box2 .person .text .one {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.chat-boxes .boxes1 .box2 .person .text .two {
+  margin: 0;
+  padding: 0;
+  width: 177px;
+  font-size: 10px;
+}
+.chat-boxes .boxes2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.chat-boxes .boxes2 .box1 {
+  width: 370px;
+  height: 245px;
+  background-color: var(--background);
+  padding: 30px 10px 40px 30px;
+  border: 1px solid var(--background);
+  height: 265px;
+}
+.chat-boxes .boxes2 .box1 .title {
+  font-size: 16px;
+}
+.chat-boxes .boxes2 .box1 .paragraph {
+  font-size: 12px;
+  text-align: start;
+  width: 350px;
+  padding-bottom: 35px;
+  line-height: 1.8em;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+.chat-boxes .boxes2 .box1 .person {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  gap: 20px;
+}
+.chat-boxes .boxes2 .box1 .person .image {
+  width: 50px;
+}
+.chat-boxes .boxes2 .box1 .person .text {
+  font-size: 13px;
+}
+.chat-boxes .boxes2 .box1 .person .text .one {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.chat-boxes .boxes2 .box1 .person .text .two {
+  margin: 0;
+  padding: 0;
+  width: 177px;
+  font-size: 10px;
+}
+.chat-boxes .boxes2 .box2 {
+  width: 370px;
+  height: 245px;
+  background-color: var(--background);
+  padding: 30px 10px 40px 30px;
+  border: 1px solid var(--background);
+  height: 265px;
+}
+.chat-boxes .boxes2 .box2 .title {
+  font-size: 16px;
+}
+.chat-boxes .boxes2 .box2 .paragraph {
+  font-size: 12px;
+  text-align: start;
+  width: 350px;
+  padding-bottom: 35px;
+  line-height: 1.8em;
+  font-weight: 300;
+  padding-bottom: 45px;
+}
+.chat-boxes .boxes2 .box2 .person {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  gap: 20px;
+}
+.chat-boxes .boxes2 .box2 .person .image {
+  width: 45px;
+}
+.chat-boxes .boxes2 .box2 .person .text {
+  font-size: 13px;
+}
+.chat-boxes .boxes2 .box2 .person .text .one {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.chat-boxes .boxes2 .box2 .person .text .two {
+  margin: 0;
+  padding: 0;
+  width: 177px;
+  font-size: 10px;
+}
+
+@media (max-width: 1030px) {
+  .chat-boxes {
+    top: 420em;
+  }
+}
+@media (max-width: 1010px) {
+  .chat-boxes {
+    top: 430em;
+  }
+}
+@media (max-width: 900px) {
+  .chat-boxes {
+    top: 395em;
+  }
+}
+@media (max-width: 700px) {
+  .chat-boxes {
+    top: 345em;
+  }
+  .chat-boxes .box2 .paragraph {
+    padding-bottom: 30px;
+  }
+  .title-top {
+    margin: 0;
+    padding: 0;
+    font-size: 38px;
+    width: 400px;
+    text-align: center;
+  }
+  .paragraph {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 500px;
+    font-size: 15px;
+  }
+  .boxes2 {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 600px) {
+  .chat-boxes {
+    top: 290em;
+  }
+  .chat-boxes .boxes1 {
+    margin-top: 15px;
+  }
+  .chat-boxes .title-top {
+    font-size: 45px;
+    width: 300px;
+    margin-top: 1em;
+  }
+}
+@media (max-width: 500px) {
+  .chat-boxes {
+    top: 263em;
+  }
+  .chat-boxes .boxes1 {
+    margin-top: 15px;
+  }
+  .chat-boxes .title-top {
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    width: 280px;
+    text-align: center;
+    margin-top: 1em;
+  }
+  .chat-boxes .paragraph {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 300px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .chat-boxes {
+    top: 258em;
+  }
+  .chat-boxes .title-top {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    width: 200px;
+    text-align: center;
+  }
+  .chat-boxes .paragraph {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 300px;
+    font-size: 10px;
+  }
+  .chat-boxes .boxes1 {
+    margin-top: 20px;
+  }
+  .chat-boxes .boxes1 .box1 {
+    width: 270px;
+    height: 245px;
+    background-color: var(--background);
+    padding: 30px 10px 40px 30px;
+    border: 1px solid var(--background);
+  }
+  .chat-boxes .boxes1 .box1 .logo {
+    width: 28px;
+  }
+  .chat-boxes .boxes1 .box1 .title {
+    font-size: 14px;
+  }
+  .chat-boxes .boxes1 .box1 .paragraph {
+    font-size: 10px;
+    text-align: start;
+    width: 250px;
+    padding-bottom: 35px;
+    line-height: 1.8em;
+    font-weight: 300;
+  }
+  .chat-boxes .boxes1 .box1 .person {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    gap: 20px;
+  }
+  .chat-boxes .boxes1 .box1 .person .image {
+    width: 40px;
+  }
+  .chat-boxes .boxes1 .box1 .person .text {
+    font-size: 10px;
+  }
+  .chat-boxes .boxes1 .box1 .person .text .one {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  .chat-boxes .boxes1 .box1 .person .text .two {
+    margin: 0;
+    padding: 0;
+    width: 177px;
+    font-size: 8px;
+  }
+  .chat-boxes .boxes1 .box2 {
+    width: 270px;
+    height: 245px;
+    background-color: var(--background);
+    padding: 30px 10px 40px 30px;
+    border: 1px solid var(--background);
+  }
+  .chat-boxes .boxes1 .box2 .logo {
+    width: 25px;
+  }
+  .chat-boxes .boxes1 .box2 .title {
+    font-size: 14px;
+  }
+  .chat-boxes .boxes1 .box2 .paragraph {
+    font-size: 10px;
+    text-align: start;
+    width: 250px;
+    padding-bottom: 35px;
+    line-height: 1.8em;
+    font-weight: 300;
+    padding-bottom: 25px;
+  }
+  .chat-boxes .boxes1 .box2 .person {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    gap: 20px;
+  }
+  .chat-boxes .boxes1 .box2 .person .image {
+    width: 40px;
+  }
+  .chat-boxes .boxes1 .box2 .person .text {
+    font-size: 10px;
+  }
+  .chat-boxes .boxes1 .box2 .person .text .one {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  .chat-boxes .boxes1 .box2 .person .text .two {
+    margin: 0;
+    padding: 0;
+    width: 177px;
+    font-size: 8px;
+  }
+  .chat-boxes .boxes2 {
+    margin-top: 5px;
+  }
+  .chat-boxes .boxes2 .box1 {
+    width: 270px;
+    height: 245px;
+    background-color: var(--background);
+    padding: 30px 10px 40px 30px;
+    border: 1px solid var(--background);
+  }
+  .chat-boxes .boxes2 .box1 .logo {
+    width: 90px;
+  }
+  .chat-boxes .boxes2 .box1 .title {
+    font-size: 14px;
+  }
+  .chat-boxes .boxes2 .box1 .paragraph {
+    font-size: 10px;
+    text-align: start;
+    width: 250px;
+    padding-bottom: 35px;
+    line-height: 1.8em;
+    font-weight: 300;
+  }
+  .chat-boxes .boxes2 .box1 .person {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    gap: 20px;
+  }
+  .chat-boxes .boxes2 .box1 .person .image {
+    width: 40px;
+  }
+  .chat-boxes .boxes2 .box1 .person .text {
+    font-size: 10px;
+  }
+  .chat-boxes .boxes2 .box1 .person .text .one {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  .chat-boxes .boxes2 .box1 .person .text .two {
+    margin: 0;
+    padding: 0;
+    width: 177px;
+    font-size: 8px;
+  }
+  .chat-boxes .boxes2 .box2 {
+    width: 270px;
+    height: 245px;
+    background-color: var(--background);
+    padding: 30px 10px 40px 30px;
+    border: 1px solid var(--background);
+  }
+  .chat-boxes .boxes2 .box2 .logo {
+    width: 90px;
+  }
+  .chat-boxes .boxes2 .box2 .title {
+    font-size: 14px;
+  }
+  .chat-boxes .boxes2 .box2 .paragraph {
+    font-size: 10px;
+    text-align: start;
+    width: 250px;
+    padding-bottom: 35px;
+    line-height: 1.8em;
+    font-weight: 300;
+    padding-bottom: 50px;
+  }
+  .chat-boxes .boxes2 .box2 .person {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    gap: 20px;
+  }
+  .chat-boxes .boxes2 .box2 .person .image {
+    width: 40px;
+  }
+  .chat-boxes .boxes2 .box2 .person .text {
+    font-size: 10px;
+  }
+  .chat-boxes .boxes2 .box2 .person .text .one {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  .chat-boxes .boxes2 .box2 .person .text .two {
+    margin: 0;
+    padding: 0;
+    width: 177px;
+    font-size: 8px;
+  }
+}
+@media (max-width: 350px) {
+  .chat-boxes {
+    top: 228em;
+  }
+}
+@media (max-width: 330px) {
+  .chat-boxes {
+    top: 228em;
+  }
+}/*# sourceMappingURL=chatbox.css.map */

@@ -212,7 +212,7 @@
   }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1033px) {
   .column-layout {
     top: 200em;
   }
@@ -784,6 +784,178 @@
           display: none;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .column-layout {
+    .layout-one {
+      @include respensive400-layout;
+
+      .image {
+        width: 250px;
+      }
+
+      .text-title {
+        @include margin;
+        width: 250px;
+
+        .number {
+          font-size: 9px;
+        }
+
+        .title {
+          @include respensive400-layout-title;
+        }
+      }
+
+      .layout-texts {
+        margin-top: 20px;
+        width: 250px;
+        .texts-one {
+          margin-left: 30px;
+          border: none;
+          flex-direction: column;
+          gap: 0;
+          width: 250px;
+
+          .paragraph {
+            @include respensive400-layout-paragraph;
+            width: 250px;
+          }
+
+          .title {
+            font-size: 12px;
+          }
+        }
+
+        .texts-two {
+          display: none;
+        }
+
+        .texts-three {
+          display: none;
+        }
+      }
+    }
+
+    .layout-two {
+      @include respensive400-layout;
+
+      .image {
+        width: 250px;
+      }
+
+      .text-title {
+        @include margin;
+        width: 250px;
+
+        .number {
+          font-size: 9px;
+        }
+
+        .title {
+          @include respensive400-layout-title;
+        }
+      }
+
+      .layout-texts {
+        margin-top: 20px;
+        width: 250px;
+        .texts-one {
+          margin-left: 30px;
+          border: none;
+          flex-direction: column;
+          gap: 0;
+          width: 250px;
+
+          .paragraph {
+            @include respensive400-layout-paragraph;
+            width: 250px;
+          }
+
+          .title {
+            font-size: 12px;
+          }
+        }
+
+        .texts-two {
+          display: none;
+        }
+
+        .texts-three {
+          display: none;
+        }
+      }
+    }
+
+    .layout-three {
+      @include respensive400-layout;
+
+      .image {
+        width: 250px;
+      }
+
+      .text-title {
+        @include margin;
+        width: 250px;
+
+        .number {
+          font-size: 9px;
+        }
+
+        .title {
+          @include respensive400-layout-title;
+        }
+      }
+
+      .layout-texts {
+        margin-top: 20px;
+        width: 250px;
+        .texts-one {
+          margin-left: 30px;
+          border: none;
+          flex-direction: column;
+          gap: 0;
+          width: 250px;
+
+          .paragraph {
+            @include respensive400-layout-paragraph;
+            width: 250px;
+          }
+
+          .title {
+            font-size: 12px;
+          }
+        }
+
+        .texts-two {
+          display: none;
+        }
+
+        .texts-three {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .column-layout {
+    top: 137em;
+
+    .layout-one {
+      @include respensive300-layout;
+    }
+
+    .layout-two {
+      @include respensive300-layout;
+    }
+
+    .layout-three {
+      @include respensive300-layout;
     }
   }
 }

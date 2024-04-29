@@ -249,7 +249,7 @@
   width: 800px;
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1033px) {
   .column-layout {
     top: 200em;
   }
@@ -869,5 +869,174 @@
   }
   .column-layout .layout-three .layout-texts .texts-three {
     display: none;
+  }
+}
+@media (max-width: 400px) {
+  .column-layout .layout-one {
+    width: 250px;
+    background-color: var(--background);
+    border: 1px solid var(--background);
+    padding: 40px 30px 30px 30px;
+  }
+  .column-layout .layout-one .image {
+    width: 250px;
+  }
+  .column-layout .layout-one .text-title {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+  }
+  .column-layout .layout-one .text-title .number {
+    font-size: 9px;
+  }
+  .column-layout .layout-one .text-title .title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .column-layout .layout-one .layout-texts {
+    margin-top: 20px;
+    width: 250px;
+  }
+  .column-layout .layout-one .layout-texts .texts-one {
+    margin-left: 30px;
+    border: none;
+    flex-direction: column;
+    gap: 0;
+    width: 250px;
+  }
+  .column-layout .layout-one .layout-texts .texts-one .paragraph {
+    font-size: 10px;
+    width: 290px;
+    line-height: 2em;
+    width: 250px;
+  }
+  .column-layout .layout-one .layout-texts .texts-one .title {
+    font-size: 12px;
+  }
+  .column-layout .layout-one .layout-texts .texts-two {
+    display: none;
+  }
+  .column-layout .layout-one .layout-texts .texts-three {
+    display: none;
+  }
+  .column-layout .layout-two {
+    width: 250px;
+    background-color: var(--background);
+    border: 1px solid var(--background);
+    padding: 40px 30px 30px 30px;
+  }
+  .column-layout .layout-two .image {
+    width: 250px;
+  }
+  .column-layout .layout-two .text-title {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+  }
+  .column-layout .layout-two .text-title .number {
+    font-size: 9px;
+  }
+  .column-layout .layout-two .text-title .title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .column-layout .layout-two .layout-texts {
+    margin-top: 20px;
+    width: 250px;
+  }
+  .column-layout .layout-two .layout-texts .texts-one {
+    margin-left: 30px;
+    border: none;
+    flex-direction: column;
+    gap: 0;
+    width: 250px;
+  }
+  .column-layout .layout-two .layout-texts .texts-one .paragraph {
+    font-size: 10px;
+    width: 290px;
+    line-height: 2em;
+    width: 250px;
+  }
+  .column-layout .layout-two .layout-texts .texts-one .title {
+    font-size: 12px;
+  }
+  .column-layout .layout-two .layout-texts .texts-two {
+    display: none;
+  }
+  .column-layout .layout-two .layout-texts .texts-three {
+    display: none;
+  }
+  .column-layout .layout-three {
+    width: 250px;
+    background-color: var(--background);
+    border: 1px solid var(--background);
+    padding: 40px 30px 30px 30px;
+  }
+  .column-layout .layout-three .image {
+    width: 250px;
+  }
+  .column-layout .layout-three .text-title {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+  }
+  .column-layout .layout-three .text-title .number {
+    font-size: 9px;
+  }
+  .column-layout .layout-three .text-title .title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .column-layout .layout-three .layout-texts {
+    margin-top: 20px;
+    width: 250px;
+  }
+  .column-layout .layout-three .layout-texts .texts-one {
+    margin-left: 30px;
+    border: none;
+    flex-direction: column;
+    gap: 0;
+    width: 250px;
+  }
+  .column-layout .layout-three .layout-texts .texts-one .paragraph {
+    font-size: 10px;
+    width: 290px;
+    line-height: 2em;
+    width: 250px;
+  }
+  .column-layout .layout-three .layout-texts .texts-one .title {
+    font-size: 12px;
+  }
+  .column-layout .layout-three .layout-texts .texts-two {
+    display: none;
+  }
+  .column-layout .layout-three .layout-texts .texts-three {
+    display: none;
+  }
+}
+@media (max-width: 350px) {
+  .column-layout {
+    top: 137em;
+  }
+  .column-layout .layout-one {
+    width: 250px;
+    background-color: var(--background);
+    border: 1px solid var(--background);
+    padding: 30px 20px 20px 20px;
+  }
+  .column-layout .layout-two {
+    width: 250px;
+    background-color: var(--background);
+    border: 1px solid var(--background);
+    padding: 30px 20px 20px 20px;
+  }
+  .column-layout .layout-three {
+    width: 250px;
+    background-color: var(--background);
+    border: 1px solid var(--background);
+    padding: 30px 20px 20px 20px;
   }
 }/*# sourceMappingURL=columnlayout.css.map */

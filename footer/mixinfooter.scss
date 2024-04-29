@@ -1,0 +1,18 @@
+@mixin margin {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin content-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin content-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
